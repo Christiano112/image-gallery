@@ -6,6 +6,10 @@ export const SUPABASE_URL = process.env
 export const SUPABASE_API_KEY = process.env
   .NEXT_PUBLIC_SUPABASE_ANON_KEY as string;
 
+export const UNSPLASH_KEY = process.env.NEXT_PUBLIC_UNSPLASH_KEY;
+
+export const fetchUrl = `https://api.unsplash.com/photos/?client_id=${UNSPLASH_KEY}`;
+
 export const getURL = () => {
   let url =
     process?.env?.NEXT_PUBLIC_SITE_URL ??

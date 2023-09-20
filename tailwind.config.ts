@@ -9,20 +9,28 @@ const config: Config = {
     extend: {
       colors: {
         primary: {
-            DEFAULT: "#543EE0",
+          DEFAULT: "#543EE0",
         },
         secondary: {
-            DEFAULT: "#FFEDCC",
+          DEFAULT: "#FFEDCC",
         },
         tertiary: {
-            DEFAULT: "#111111",
+          DEFAULT: "#111111",
         },
-    },
-    screens: {
+      },
+      screens: {
         xs: "480px",
         "2xs": "576px",
-    },
-
+      },
+      keyframes: {
+        rotate180: {
+          '0%': { transform: 'rotate(0deg)' },
+          '100%': { transform: 'rotate(180deg)' },
+        }
+      },
+      animation: {
+        rotate180: 'rotate180 300ms ease-in-out 1',
+      },
     },
   },
   plugins: [],

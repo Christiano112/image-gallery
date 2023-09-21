@@ -24,6 +24,12 @@ const Nav = () => {
         setSearchQuery(event.target.value);
     };
 
+    const handleSearch = () => {
+        if (searchQuery.trim() !== "") {
+            router.push(`/gallery?q=${searchQuery}`);
+        }
+    };
+
     return (
         <header className="shadow py-2 md:py-0">
             <nav className="container-fluid mx-auto flex items-center justify-between gap-4 px-2 2xs:px-4">
@@ -46,7 +52,7 @@ const Nav = () => {
                         onChange={handleChange}
                         onKeyUp={(event) => {
                             if (event.key === "Enter") {
-                                // handleSearch();
+                                handleSearch();
                             }
                         }}
                         className="w-full py-2 pl-2 pr-2 text-sm text-tertiary bg-white border border-primary-50 rounded-md focus:ring-1 focus:ring-primary focus:outline-none focus:ring-opacity-50"
@@ -54,7 +60,7 @@ const Nav = () => {
                     <AiOutlineSearch
                         className="absolute top-1/2 right-2 transform -translate-y-1/2 text-slate-400 cursor-pointer"
                         size={20}
-                    // onClick={handleSearch}
+                        onClick={handleSearch}
                     />
                 </div>
                 <div className="hidden md:block">

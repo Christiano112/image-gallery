@@ -9,6 +9,7 @@ export const SUPABASE_API_KEY = process.env
 export const UNSPLASH_KEY = process.env.NEXT_PUBLIC_UNSPLASH_KEY;
 
 export const fetchUrl = `https://api.unsplash.com/photos/?client_id=${UNSPLASH_KEY}`;
+export const searchUrl = `https://api.unsplash.com/search/photos/?client_id=${UNSPLASH_KEY}`;
 
 export const getURL = () => {
   let url =

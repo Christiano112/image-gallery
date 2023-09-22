@@ -74,9 +74,6 @@ const Nav = () => {
               <button className="btn" onClick={() => router.push("/login")}>
                 Login
               </button>
-              <button className="btn" onClick={() => router.push("/signup")}>
-                Sign up
-              </button>
             </div>
           )}
         </div>
@@ -131,9 +128,6 @@ const Nav = () => {
               <div className="flex flex-col max-w-[6rem]">
                 <button className="btn" onClick={() => router.push("/login")}>
                   Login
-                </button>
-                <button className="btn" onClick={() => router.push("/signup")}>
-                  Sign up
                 </button>
               </div>
             )}

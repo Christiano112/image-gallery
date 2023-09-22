@@ -112,15 +112,6 @@ const Login = () => {
           GitHub
         </button>
       </div>
-      <p className="mt-10 text-center">
-        Don{"'"}t have an account?{" "}
-        <Link
-          href="/signup"
-          className="underline hover:text-blue-800 hover:underline-offset-4 whitespace-nowrap"
-        >
-          Sign Up
-        </Link>
-      </p>
     </main>
   );
 };

@@ -83,8 +83,3 @@ Here are the main dependencies used in this project:
 ## Acknowledgments
 
 - Images sourced from [Unsplash](https://unsplash.com).
-
-## LOGIN CREDENTIALS
-
-- ### EMAIL: enyiachristian36@gmail.com
-- ### PASS: 67x_5Q2jtFSx-RM
